@@ -1,0 +1,15 @@
+﻿<Window x:Class="AzureScalabilityTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="295.058" Width="604">
+    <Grid Margin="0,0,0,1">
+        <Label Content="Connection" HorizontalAlignment="Left" Margin="33,34,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbConn"  HorizontalAlignment="Left" Height="104" Margin="127,38,0,0" TextWrapping="Wrap" Text="{Binding ConnectionString,Mode=TwoWay}" VerticalAlignment="Top" Width="441" />
+        <Label Content="# of threads" HorizontalAlignment="Left" Margin="33,178,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbThreads"  HorizontalAlignment="Left" Height="23" Margin="127,180,0,0" TextWrapping="Wrap" Text="{Binding NumberOfThreads,Mode=TwoWay}" VerticalAlignment="Top" Width="53"/>
+        <Button Name="btnAddThread" Content="Increase (by 10)" HorizontalAlignment="Left" Margin="204,182,0,0" VerticalAlignment="Top" Width="91" Click="btnAddThread_Click"/>
+        <Button Name="btnStopAll" Content="Stop All" HorizontalAlignment="Left" Margin="493,181,0,0" VerticalAlignment="Top" Width="75" Click="btnStopAll_Click" RenderTransformOrigin="0.493,1.727"/>
+        <Button Name="btnDelThread" Content="Decrease (by 10)" HorizontalAlignment="Left" Margin="310,181,0,0" VerticalAlignment="Top" Width="91" Click="btnDelThread_Click"/>
+
+    </Grid>
+</Window>
